@@ -1,0 +1,72 @@
+JavaScript can do math (+, -, *, /, %). 
+It can also ask the user questions using prompt() 
+and store the answers in variables.
+
+Math Operators:
+const a = 10;
+const b = 3;
+
+console.log(a + b);   // 13 (addition)
+console.log(a - b);   // 7  (subtraction)
+console.log(a * b);   // 30 (multiplication)
+console.log(a / b);   // 3.333... (division)
+console.log(a % b);   // 1  (remainder — the "leftover")
+
+
+Asking the User:
+let name = prompt("What is your name?");
+alert("Welcome, " + name + "!");
+
+
+String + String = Combined Text:
+let firstName = "Tony";
+let lastName = "Stark";
+let fullName = firstName + " " + lastName;
+// fullName is "Tony Stark"
+
+N.B prompt() always gives you a STRING, even if the user types a 
+let age = prompt("How old are you?");
+// age is "12" (text), not 12 (number)
+// To fix: var age = Number(prompt("How old are you?"));
+
+
+Classwork — Build This:
+1. Ask the user for their name and say hello
+2. Ask for two numbers and show their sum
+3. Ask for their birth year and calculate their age (2026 - birthYear)
+
+
+------------------------------------------------------------------------------------------
+
+If, Else If, Else
+
+Comparison Operators:
+== equal to:
+5 == 5 is true;
+
+!= not equal to:
+5 != 3 is true; 
+ > greater than: 10 > 5 is true 
+ <  less than: 3 < 7 is true
+ >=  greater or equal: 5 >= 5 is true
+ <= less or equal: 4 <= 5 is true 
+
+The If Statement:
+let age = Number(prompt("How old are you?"));
+if (age >= 13) {
+alert("You can watch Marvel movies!)
+} else if (age >= 8) {
+alert("You can watch Disney Junior!)
+} else {
+alert("You can watch Paw Patrol!) 
+}
+
+How it reads: - IF age is 13 or more → Marvel - ELSE IF age is 8 or more → 
+Disney - ELSE (anything else) → Paw Patrol
+
+
+Classwork — Build This:
+1. Ask for a test score (0-100). If 90+, say “A!” If 80 to 89, say “B!” If 70 79, say “C!” 
+Else say “Keep trying!”
+2. Ask for a password. If it’s “secret123”, say “Access granted!” Else say 
+“Wrong password!”
